@@ -1,0 +1,146 @@
+/* src/components/ChecklistPage/ChecklistPage.module.css */
+
+.checklistContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px 50px 20px; /* NavBar 여백 확보 */
+    font-family: 'PyeojinGothic', sans-serif;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- 뷰 전환 탭 스타일 --- */
+.viewTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.viewTabs button {
+    font-family: inherit;
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.viewTabs button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.viewTabs button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.activeTab {
+    background-color: #5cb85c !important; 
+    color: white !important;
+}
+
+/* --- 체크리스트 본문 스타일 --- */
+.contentArea {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.sectionHeader {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5cb85c;
+    border-bottom: 2px solid #e0f2e0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.sectionHeader:first-child {
+    margin-top: 0;
+}
+
+.checkGroup {
+    padding: 10px 0;
+}
+
+.checkItem {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.checkItem input[type="checkbox"], 
+.checkItem input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* 식사 라디오 버튼 그룹 */
+.radioGroup {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.radioTitle {
+    font-weight: 400;
+    margin-top: 0;
+}
+.radioGroup label {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+/* 위험 신호 강조 스타일 */
+.warning {
+    color: #d9534f; /* 붉은색 강조 */
+    border-color: #f2d7d7 !important;
+    font-weight: 500;
+}
+.warning input {
+    accent-color: #d9534f; /* 체크박스 색상 변경 */
+}
+
+/* 특이사항 텍스트 영역 */
+.textArea {
+    width: 98%;
+    min-height: 80px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* 최종 제출 버튼 */
+.submitButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #4cae4c;
+}

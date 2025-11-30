@@ -1,0 +1,45 @@
+/* src/components/NavBar/NavBar.module.css */
+
+.navBar {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 15px 30px;
+    
+    display: flex;
+    justify-content: flex-start; 
+    gap: 40px; /* 로고와 메뉴 그룹 사이의 간격 조정 */
+    
+    align-items: center;
+    z-index: 1000; 
+    font-family: 'PyeojinGothic', sans-serif;
+}
+
+.logo {
+    /* 홈으로 이동하는 로고/타이틀 */
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5cb85c; /* 봉사활동의 주조색 적용 */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    gap: 25px; /* 링크 간 간격 */
+}
+
+.navLink {
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.navLink:hover {
+    color: #4cae4c; /* 호버 시 색상 변경 */
+}
